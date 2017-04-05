@@ -1,0 +1,30 @@
+1. How is the graph stored in the provided code? Is it represented as an adjacency matrix or list?
+
+    The graph utilizes an edge list.
+
+2. Which of the 3 graphs are connected? How can you tell?
+
+  Graph 2 Graph 3 are both connected since all of their vertices are reachable, while in graph 1 some of
+  the vertices are not reachable.
+
+3. Imagine that we ran each depth-first and breadth-first searches in the other direction (from destination
+to source). Would the output change at all? Would the output change if the graphs were
+directed graphs?
+
+It would not change the results to simply reverse the direction since the paths between the vertices are not
+dependent on the direction. If you were to change the graph to be directed it could change the results since
+some paths would be single direction edges.
+
+4. What are some pros and cons of DFS vs BFS? When would you use one over the other?
+
+  DFS
+    Pros: Uses less memory and has the possibility of finding the solution faster than BFS.
+    Cons: Has a potential of never getting stuck never finding the solution. It also can require a lot of
+    backtracking.
+  BFS
+    Pros: Will always find a solution since it checks all paths at once.
+    Cons: Requires much more memory than the DFS since it checks all possible paths at once.
+
+5. What is the Big O execution time to determine if a vertex is reachable from another vertex?
+
+    The complexity is O(E+V), where E is the number of edges and V is the number of vertices.
